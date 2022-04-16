@@ -16,6 +16,19 @@
 		E3519F08280AA1D900D7213C /* PremiaMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3519F07280AA1D900D7213C /* PremiaMobileTests.swift */; };
 		E3519F12280AA1D900D7213C /* PremiaMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3519F11280AA1D900D7213C /* PremiaMobileUITests.swift */; };
 		E3519F14280AA1D900D7213C /* PremiaMobileUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3519F13280AA1D900D7213C /* PremiaMobileUITestsLaunchTests.swift */; };
+		E3519F25280AA51C00D7213C /* HalextClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3519F24280AA51C00D7213C /* HalextClient.swift */; };
+		E3519F27280B066200D7213C /* HalextParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3519F26280B066200D7213C /* HalextParser.swift */; };
+		E3519F29280B2B2B00D7213C /* TDClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3519F28280B2B2B00D7213C /* TDClient.swift */; };
+		E3519F2B280B2B3200D7213C /* TDParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3519F2A280B2B3200D7213C /* TDParser.swift */; };
+		E3519F2F280B2BB600D7213C /* CandleChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3519F2E280B2BB600D7213C /* CandleChartView.swift */; };
+		E367AA8A280B53A300983E1E /* TDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E367AA89280B53A300983E1E /* TDManager.swift */; };
+		E367AA8E280B5AFA00983E1E /* TDStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = E367AA8D280B5AFA00983E1E /* TDStructures.swift */; };
+		E367AAC3280B70A400983E1E /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E367AAC0280B6FF500983E1E /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E367AAC7280B70D200983E1E /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E367AAC0280B6FF500983E1E /* Charts.framework */; };
+		E367AACA280B70F200983E1E /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = E367AAC9280B70F200983E1E /* Algorithms */; };
+		E367AACD280B710000983E1E /* ComplexModule in Frameworks */ = {isa = PBXBuildFile; productRef = E367AACC280B710000983E1E /* ComplexModule */; };
+		E367AACF280B710000983E1E /* Numerics in Frameworks */ = {isa = PBXBuildFile; productRef = E367AACE280B710000983E1E /* Numerics */; };
+		E367AAD1280B710000983E1E /* RealModule in Frameworks */ = {isa = PBXBuildFile; productRef = E367AAD0280B710000983E1E /* RealModule */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +46,42 @@
 			remoteGlobalIDString = E3519EEC280AA1D800D7213C;
 			remoteInfo = PremiaMobile;
 		};
+		E367AABF280B6FF500983E1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E367AABA280B6FF500983E1E /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		E367AAC1280B6FF500983E1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E367AABA280B6FF500983E1E /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+		E367AAC4280B70AB00983E1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E367AABA280B6FF500983E1E /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A58A4ED274A941CA248EA921;
+			remoteInfo = Charts;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E367AAB9280B6F9300983E1E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E367AAC3280B70A400983E1E /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E3519EED280AA1D800D7213C /* PremiaMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PremiaMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +97,14 @@
 		E3519F0D280AA1D900D7213C /* PremiaMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PremiaMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3519F11280AA1D900D7213C /* PremiaMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiaMobileUITests.swift; sourceTree = "<group>"; };
 		E3519F13280AA1D900D7213C /* PremiaMobileUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiaMobileUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E3519F24280AA51C00D7213C /* HalextClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalextClient.swift; sourceTree = "<group>"; };
+		E3519F26280B066200D7213C /* HalextParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalextParser.swift; sourceTree = "<group>"; };
+		E3519F28280B2B2B00D7213C /* TDClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDClient.swift; sourceTree = "<group>"; };
+		E3519F2A280B2B3200D7213C /* TDParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDParser.swift; sourceTree = "<group>"; };
+		E3519F2E280B2BB600D7213C /* CandleChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleChartView.swift; sourceTree = "<group>"; };
+		E367AA89280B53A300983E1E /* TDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDManager.swift; sourceTree = "<group>"; };
+		E367AA8D280B5AFA00983E1E /* TDStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDStructures.swift; sourceTree = "<group>"; };
+		E367AABA280B6FF500983E1E /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Charts.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +112,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E367AACA280B70F200983E1E /* Algorithms in Frameworks */,
+				E367AACD280B710000983E1E /* ComplexModule in Frameworks */,
+				E367AACF280B710000983E1E /* Numerics in Frameworks */,
+				E367AAD1280B710000983E1E /* RealModule in Frameworks */,
+				E367AAC7280B70D200983E1E /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +144,7 @@
 				E3519F06280AA1D900D7213C /* PremiaMobileTests */,
 				E3519F10280AA1D900D7213C /* PremiaMobileUITests */,
 				E3519EEE280AA1D800D7213C /* Products */,
+				E367AAC6280B70D200983E1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +161,8 @@
 		E3519EEF280AA1D800D7213C /* PremiaMobile */ = {
 			isa = PBXGroup;
 			children = (
+				E3519F2D280B2BAB00D7213C /* Views */,
+				E3519F20280AA35C00D7213C /* Services */,
 				E3519EF0280AA1D800D7213C /* AppDelegate.swift */,
 				E3519EF2280AA1D800D7213C /* SceneDelegate.swift */,
 				E3519EF4280AA1D800D7213C /* ViewController.swift */,
@@ -127,6 +191,68 @@
 			path = PremiaMobileUITests;
 			sourceTree = "<group>";
 		};
+		E3519F20280AA35C00D7213C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E3519F23280AA4FC00D7213C /* Coinbase */,
+				E3519F22280AA4F400D7213C /* HalextLabs */,
+				E3519F21280AA36500D7213C /* TDAmeritrade */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E3519F21280AA36500D7213C /* TDAmeritrade */ = {
+			isa = PBXGroup;
+			children = (
+				E3519F28280B2B2B00D7213C /* TDClient.swift */,
+				E3519F2A280B2B3200D7213C /* TDParser.swift */,
+				E367AA89280B53A300983E1E /* TDManager.swift */,
+				E367AA8D280B5AFA00983E1E /* TDStructures.swift */,
+			);
+			path = TDAmeritrade;
+			sourceTree = "<group>";
+		};
+		E3519F22280AA4F400D7213C /* HalextLabs */ = {
+			isa = PBXGroup;
+			children = (
+				E3519F24280AA51C00D7213C /* HalextClient.swift */,
+				E3519F26280B066200D7213C /* HalextParser.swift */,
+			);
+			path = HalextLabs;
+			sourceTree = "<group>";
+		};
+		E3519F23280AA4FC00D7213C /* Coinbase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coinbase;
+			sourceTree = "<group>";
+		};
+		E3519F2D280B2BAB00D7213C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E3519F2E280B2BB600D7213C /* CandleChartView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E367AABB280B6FF500983E1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E367AAC0280B6FF500983E1E /* Charts.framework */,
+				E367AAC2280B6FF500983E1E /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E367AAC6280B70D200983E1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E367AABA280B6FF500983E1E /* Charts.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,12 +263,20 @@
 				E3519EE9280AA1D800D7213C /* Sources */,
 				E3519EEA280AA1D800D7213C /* Frameworks */,
 				E3519EEB280AA1D800D7213C /* Resources */,
+				E367AAB9280B6F9300983E1E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E367AAC5280B70AB00983E1E /* PBXTargetDependency */,
 			);
 			name = PremiaMobile;
+			packageProductDependencies = (
+				E367AAC9280B70F200983E1E /* Algorithms */,
+				E367AACC280B710000983E1E /* ComplexModule */,
+				E367AACE280B710000983E1E /* Numerics */,
+				E367AAD0280B710000983E1E /* RealModule */,
+			);
 			productName = PremiaMobile;
 			productReference = E3519EED280AA1D800D7213C /* PremiaMobile.app */;
 			productType = "com.apple.product-type.application";
@@ -215,8 +349,18 @@
 				Base,
 			);
 			mainGroup = E3519EE4280AA1D800D7213C;
+			packageReferences = (
+				E367AAC8280B70F200983E1E /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				E367AACB280B710000983E1E /* XCRemoteSwiftPackageReference "swift-numerics" */,
+			);
 			productRefGroup = E3519EEE280AA1D800D7213C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E367AABB280B6FF500983E1E /* Products */;
+					ProjectRef = E367AABA280B6FF500983E1E /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E3519EEC280AA1D800D7213C /* PremiaMobile */,
@@ -225,6 +369,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E367AAC0280B6FF500983E1E /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = E367AABF280B6FF500983E1E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E367AAC2280B6FF500983E1E /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = E367AAC1280B6FF500983E1E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E3519EEB280AA1D800D7213C /* Resources */ = {
@@ -259,8 +420,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3519EF5280AA1D800D7213C /* ViewController.swift in Sources */,
+				E367AA8E280B5AFA00983E1E /* TDStructures.swift in Sources */,
 				E3519EF1280AA1D800D7213C /* AppDelegate.swift in Sources */,
+				E3519F25280AA51C00D7213C /* HalextClient.swift in Sources */,
+				E367AA8A280B53A300983E1E /* TDManager.swift in Sources */,
 				E3519EF3280AA1D800D7213C /* SceneDelegate.swift in Sources */,
+				E3519F2F280B2BB600D7213C /* CandleChartView.swift in Sources */,
+				E3519F29280B2B2B00D7213C /* TDClient.swift in Sources */,
+				E3519F27280B066200D7213C /* HalextParser.swift in Sources */,
+				E3519F2B280B2B3200D7213C /* TDParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +461,11 @@
 			isa = PBXTargetDependency;
 			target = E3519EEC280AA1D800D7213C /* PremiaMobile */;
 			targetProxy = E3519F0E280AA1D900D7213C /* PBXContainerItemProxy */;
+		};
+		E367AAC5280B70AB00983E1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = E367AAC4280B70AB00983E1E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -602,6 +775,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E367AAC8280B70F200983E1E /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		E367AACB280B710000983E1E /* XCRemoteSwiftPackageReference "swift-numerics" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-numerics.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E367AAC9280B70F200983E1E /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E367AAC8280B70F200983E1E /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+		E367AACC280B710000983E1E /* ComplexModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E367AACB280B710000983E1E /* XCRemoteSwiftPackageReference "swift-numerics" */;
+			productName = ComplexModule;
+		};
+		E367AACE280B710000983E1E /* Numerics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E367AACB280B710000983E1E /* XCRemoteSwiftPackageReference "swift-numerics" */;
+			productName = Numerics;
+		};
+		E367AAD0280B710000983E1E /* RealModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E367AACB280B710000983E1E /* XCRemoteSwiftPackageReference "swift-numerics" */;
+			productName = RealModule;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E3519EE5280AA1D800D7213C /* Project object */;
 }
