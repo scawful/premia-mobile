@@ -141,7 +141,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FNG-Ex-5OX">
-                                <rect key="frame" x="20" y="44" width="374" height="501"/>
+                                <rect key="frame" x="20" y="44" width="374" height="685"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ba-qA-D2I" customClass="CandleStickChartView" customModule="Charts">
                                         <rect key="frame" x="8" y="8" width="358" height="485"/>
@@ -151,7 +151,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="2ba-qA-D2I" firstAttribute="leading" secondItem="FNG-Ex-5OX" secondAttribute="leading" constant="8" id="2aA-WD-JHb"/>
-                                    <constraint firstAttribute="bottom" secondItem="2ba-qA-D2I" secondAttribute="bottom" constant="8" id="CRJ-RX-pkA"/>
+                                    <constraint firstAttribute="bottom" secondItem="2ba-qA-D2I" secondAttribute="bottom" constant="192" id="CRJ-RX-pkA"/>
                                     <constraint firstItem="2ba-qA-D2I" firstAttribute="top" secondItem="FNG-Ex-5OX" secondAttribute="top" constant="8" id="Tum-Ht-wZA"/>
                                     <constraint firstAttribute="trailing" secondItem="2ba-qA-D2I" secondAttribute="trailing" constant="8" id="qfF-Ha-r6F"/>
                                 </constraints>
@@ -159,7 +159,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WL5-eq-Ffr"/>
                         <constraints>
-                            <constraint firstItem="WL5-eq-Ffr" firstAttribute="bottom" secondItem="FNG-Ex-5OX" secondAttribute="bottom" constant="268" id="Ayh-8k-pRN"/>
+                            <constraint firstItem="WL5-eq-Ffr" firstAttribute="bottom" secondItem="FNG-Ex-5OX" secondAttribute="bottom" constant="84" id="Ayh-8k-pRN"/>
                             <constraint firstItem="FNG-Ex-5OX" firstAttribute="top" secondItem="WL5-eq-Ffr" secondAttribute="top" id="MQK-Us-W7D"/>
                             <constraint firstItem="FNG-Ex-5OX" firstAttribute="leading" secondItem="rtn-D0-ENL" secondAttribute="leadingMargin" id="oNk-Uo-SQp"/>
                             <constraint firstItem="FNG-Ex-5OX" firstAttribute="trailing" secondItem="rtn-D0-ENL" secondAttribute="trailingMargin" id="pLw-cV-Lly"/>
